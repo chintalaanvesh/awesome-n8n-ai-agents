@@ -16,42 +16,69 @@ Each workflow in this collection is **fully documented**, **importable into n8n*
 
 ### Job & Career Automation
 
-| Project | Stack | What it does |
-|---------|-------|-------------|
-| [JobPilot — AI Job Search Agent](https://github.com/chintalaanvesh/jobpilot-ai-agent) | n8n · Claude · Next.js · Supabase | Scrapes LinkedIn jobs, scores each against your resume (0–100), generates personalized cover letters and outreach emails. Full dashboard UI with live demo. |
+#### [JobPilot — AI Job Search Agent](https://github.com/chintalaanvesh/jobpilot-ai-agent)
+**Stack:** n8n · Claude · Next.js · Supabase
+
+Scrapes LinkedIn jobs, scores each against your resume (0–100), generates personalized cover letters and outreach emails. Full dashboard UI with live demo.
+
+> Demo video available in the [project repo](https://github.com/chintalaanvesh/jobpilot-ai-agent).
 
 ---
 
 ### Content & Social Media Automation
 
-| Project | Stack | What it does |
-|---------|-------|-------------|
-| [Instagram Content Agent](https://github.com/chintalaanvesh/instagram-content-agent) | n8n · GPT-4o · Gemini Imagen 4.0 · Cloudinary | RSS feeds → relevance scoring → caption + hashtag generation → AI image generation → Cloudinary post-processing → Google Sheets content calendar. Fully automated, daily. |
+#### [Instagram Content Agent](https://github.com/chintalaanvesh/instagram-content-agent)
+**Stack:** n8n · GPT-4o · Gemini Imagen 4.0 · Cloudinary
+
+RSS feeds → relevance scoring → caption + hashtag generation → AI image generation → Cloudinary post-processing → Google Sheets content calendar. Fully automated, daily.
+
+![Instagram Content Agent Workflow](assets/instagram-content-agent.png)
 
 ---
 
 ### Analytics & Data Pipelines
 
-| Project | Stack | What it does |
-|---------|-------|-------------|
-| [Gig Surge Analytics](https://github.com/chintalaanvesh/gig-surge-analytics) | n8n · GPT-4o Vision · PostgreSQL · Google Sheets | Turns delivery platform surge screenshots into a queryable PostgreSQL database. Conversational AI agent answers earnings questions in plain English using SQL tool calls. |
-| [Zomato Spend Analyzer](https://github.com/chintalaanvesh/zomato-spend-analyzer) | n8n · OpenAI · Telegram | Extracts Zomato invoices, analyzes spending patterns, sends reports and budget alerts via Telegram. |
+#### [Gig Surge Analytics](https://github.com/chintalaanvesh/gig-surge-analytics)
+**Stack:** n8n · GPT-4o Vision · PostgreSQL · Google Sheets
+
+Turns delivery platform surge screenshots into a queryable PostgreSQL database. Conversational AI agent answers earnings questions in plain English using SQL tool calls.
+
+**Image Extraction Pipeline**
+
+![Gig Surge — Image Extraction Workflow](assets/gig-surge-image-extraction.png)
+
+**Analytics Agent + SQL Sub-workflow**
+
+![Gig Surge — Analytics Agent Workflow](assets/gig-surge-analytics-agent.png)
+
+---
+
+#### [Zomato Spend Analyzer](https://github.com/chintalaanvesh/zomato-spend-analyzer)
+**Stack:** n8n · OpenAI · Telegram
+
+Extracts Zomato invoices, analyzes spending patterns, sends reports and budget alerts via Telegram.
+
+![Zomato Spend Analyzer Workflow](assets/zomato-spend-analyzer.png)
 
 ---
 
 ### Multimodal & Vision Pipelines
 
-| Project | Stack | What it does |
-|---------|-------|-------------|
-| [Ad Variable Extraction](https://github.com/chintalaanvesh/ad-variable-extraction) | n8n · Claude Vision · Cloudinary · Google Sheets | Pulls video frames from Cloudinary, runs Claude Vision + Claude Text to extract 10 creative performance variables per ad, writes structured output back to Google Sheets. |
+#### [Ad Variable Extraction](https://github.com/chintalaanvesh/ad-variable-extraction)
+**Stack:** n8n · Claude Vision · Cloudinary · Google Sheets
+
+Pulls video frames from Cloudinary, runs Claude Vision + Claude Text to extract 10 creative performance variables per ad, writes structured output back to Google Sheets.
+
+![Ad Variable Extraction Workflow](assets/ad-variable-extraction.png)
 
 ---
 
 ### Chatbots & Support
 
-| Project | Stack | What it does |
-|---------|-------|-------------|
-| [Credit Support Chatbot](https://github.com/chintalaanvesh/credit-support-chatbot) | JavaScript · HTML · LLM | AI-powered customer support chatbot for credit-related queries. |
+#### [Credit Support Chatbot](https://github.com/chintalaanvesh/credit-support-chatbot)
+**Stack:** JavaScript · HTML · LLM
+
+AI-powered customer support chatbot for credit-related queries.
 
 ---
 
@@ -100,7 +127,7 @@ git clone https://github.com/chintalaanvesh/<project-name>.git
 Found a bug, want to add a workflow, or have an improvement? Contributions are welcome.
 
 1. Fork this repo
-2. Add your workflow to the relevant category in the table above
+2. Add your workflow to the relevant category above
 3. Make sure your project repo has: a clear README, a workflow JSON file, and documented env variables
 4. Open a PR with a short description of what your workflow does
 
