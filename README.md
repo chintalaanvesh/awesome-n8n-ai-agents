@@ -25,6 +25,15 @@ Scrapes LinkedIn jobs, scores each against your resume (0–100), generates pers
 
 ---
 
+### Healthcare & Clinical AI
+
+#### [Healthcare AI — Finding-to-Action Pipeline](https://github.com/chintalaanvesh/healthcare-ai-finding-to-action-pipeline)
+**Stack:** n8n · Claude · Supabase · Twilio · SendGrid
+
+Production-grade clinical decision routing system. Sits downstream of a medical AI model — receives a finding, runs a 4-branch signal quality gate, classifies severity with SLA timers, generates a plain-language summary in the site's local language via Claude API, and routes to WhatsApp / SMS / Email / Dashboard per per-site rules. Clinicians reply ACK / REJECT / ESCALATE. SLA breaches auto-escalate. A weekly learning loop flags high false-positive sites and asks Claude to recommend threshold adjustments for human approval.
+
+---
+
 ### Content & Social Media Automation
 
 #### [Instagram Content Agent](https://github.com/chintalaanvesh/instagram-content-agent)
@@ -117,7 +126,7 @@ git clone https://github.com/chintalaanvesh/<project-name>.git
 | Databases | PostgreSQL, Supabase |
 | Storage / Media | Cloudinary, Google Drive |
 | Frontend | Next.js, TypeScript |
-| Notifications | Telegram |
+| Notifications | Telegram, Twilio (WhatsApp / SMS), SendGrid |
 | Spreadsheets | Google Sheets |
 
 ---
